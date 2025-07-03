@@ -1,9 +1,10 @@
-# zapret_build-exe
+# zapret_build.exe
 
-Для сборки в единый exe:
-1. В cmd перейти в корень папки
-2. Скачать python и библиотеку pyinstaller (pip install pyinstaller)
-3. Ввести команду:
+## Для сборки в единый exe:
+### 1. В cmd перейти в корень папки
+### 2. Скачать python и библиотеку pyinstaller (pip install pyinstaller)
+### 3. Ввести команду:
+```bash
 python -m PyInstaller --onefile --windowed --uac-admin ^
 --icon=iconmain.ico ^
 --add-data "icon.ico;." ^
@@ -17,3 +18,4 @@ python -m PyInstaller --onefile --windowed --uac-admin ^
 --add-data "zapret/zapret-winws/WinDivert64.sys;zapret/zapret-winws" ^
 --add-data "zapret/zapret-winws/winws.exe;zapret/zapret-winws" ^
 main.py
+```
